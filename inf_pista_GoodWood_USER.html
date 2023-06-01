@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Activities4All Racing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- PopLogin -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Paginação-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index_USER.html" class="scrollto"><img style="width: 200px;height: 500px;object-fit: cover;" src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index_USER.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#about">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#speakers">Pistas</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#schedule">Agenda</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#venue">Paddock</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#hotels">Eventos</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#gallery">Galeria</a></li>
+          <li><a class="nav-link scrollto" href="index_USER.html#contact">Contacto</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+         
+      <button class="buy-tickets scrollto" id="show-login" data-bs-toggle="modal" data-bs-target="#ModalFormRegisto" onclick="meuPerfFunc()">Meu Perfil</button>
+
+    </div>
+  </header><!-- End Header -->
+
+ <!-- ======= LoginPOP ======= -->
+  
+ <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" id="loginPOPModal" style="background-color: inherit; border-color: #a09d9d00;">
+      <div class="v8_3" style="height: 506px;"></div> <!--Plano vermlho do background-->
+      <div class="modal-body" id="loginPOPModal">
+          <button type="button" class="btn-close btn-close-white" id="loginPOP" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="myform bg-dark" style="border-radius: 30px;">
+              <!--<h1 class="text-center">Login Form</h1>-->
+              <img style="object-fit: cover;width: 100%;height: 100px;" src="assets/img/v8_5.png" alt="" title="">
+              <form>
+                  <div class="mb-3 mt-4">
+                      <!--<label for="exampleInputEmail1" class="form-label">Email address</label>-->
+                      <i style="position:absolute;color: rgb(51,51,51,1);z-index: 50;padding-left: 8%;margin-left: -13px;margin-top: 8px;" class="fa-solid fa-user"></i>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" style="padding-left: 12%;">
+                  </div>
+                  <div class="mb-3">
+                     <!-- <label for="exampleInputPassword1" class="form-label">Password</label>-->
+                     <i style="position:absolute;color: rgb(51,51,51,1);z-index: 50;padding-left: 8%;margin-left: -13px;margin-top: 8px;" class="fa-solid fa-lock"></i>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="padding-left: 12%;">
+                  </div>
+                  <button type="submit" class="btn btn-light" id="pop-login-btn">Login</button>
+                  <button style="background-color:#D9D9D9;;margin-top: 16px;color: #333333;" type="submit" class="btn btn-light" id="pop-login-google-btn">Login com Conta <span style="color: #4285F4;">G</span><span style="color: #Db4437;">o</span><span style="color: #f4b400;">o</span><span style="color: #4285F4;">g</span><span style="color: #0f9d58;">l</span><span style="color: #Db4437;">e</span></button>
+                  <p style="color:#FFFFFF; font-size: 14px;" id="logP">Esqueci-me da password.Clique <a style= "font-weight: lighter; color: #a09d9d" href="">aqui</a></p>
+                  
+                  <button type="button" target="_modal:Open" id="pop-login-registar-btn" data-bs-toggle="modal" data-bs-target="#ModalFormRegisto" data-bs-dismiss="modal">Registar Nova Conta</button>
+                </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= Meu Perfil ======= -->
+<div class="modal fade" id="ModalFormRegisto" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" id="loginPOPModalRegis" style="background-color: inherit; border-color: #a09d9d00;width: 500px">
+      <div class="v8_3" style="width: 500px;height: 620px;"></div> <!--Plano vermlho do background-->
+      <div class="modal-body" id="loginPOPModal">
+          <button type="button" class="btn-close btn-close-white" id="loginPOP" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="myform bg-dark" style="border-radius: 30px;">
+              <!--<h1 class="text-center">Login Form</h1>-->
+
+              <h1 class="text-center"><a href="index.html" onclick="logOut()"><i class="fa-solid fa-arrow-right-from-bracket"></i></a> Meu Perfil</h1>
+              <span style="color:#8898AA; font-weight: bold;font-size: 12px;">Informação do utilizador</span>
+            
+              <form>
+                  <div class="mb-3 mt-4">
+                      <!--<label for="exampleInputEmail1" class="form-label">Email address</label>-->
+                      <span style="color:#525F7F; font-weight: bold;font-size: 14px;margin-top: -23px;position: absolute;">Username</span>
+                      <span style="color:#525F7F; font-weight: bold;font-size: 14px;position: absolute;margin-top: -23px;margin-left: 227px;">Email</span>
+                      <label id="holderUsernameMeuPerfil" style="padding-left: 12%;padding: 10px;"></label>
+                      <label id="holderEmailMeuPerfil" style="padding-left: 12%;padding: 10px;margin-left: 16px;width: 50%;"></label>
+                  </div>
+                  <div class="mb-3">
+                    <span style="color:#525F7F; font-weight: bold;font-size: 14px;margin-top: -8px;position: absolute;">Primeiro Nome</span>
+                    <span style="color:#525F7F; font-weight: bold;font-size: 14px;position: absolute;margin-top: -8px;margin-left: 227px;">Último Nome</span>
+                    <label id="holderPrimeiroMeuPerfil" style="padding-left: 12%;padding: 10px;margin-top: 13px;"></label>
+                    <label id="holderUltimoMeuPerfil" style="padding-left: 12%;padding: 10px;margin-top: 13px;margin-left: 16px"></label>
+                  </div>
+                  <div class="mb-3">
+                    <span style="color:#525F7F; font-weight: bold;font-size: 14px;margin-top: -8px;position: absolute;">Telemóvel</span>
+                    <label id="holderTelemovelMeuPerfil" style="padding-left: 12%;padding: 10px;margin-top:19px"></label>
+                  </div>
+                </form>
+                <hr>
+                <span style="color:#8898AA; font-weight: bold;font-size: 12px;">Histórico de Reservas</span>
+                <!-- Tabela Reservas -->
+                <div style="border-radius: 5px;">
+                    <div style="display: flex;align-items: center;justify-content: space-between;">
+                      <h6 style="color:#FFFFFF;font-weight: bold;font-size: 14px;margin-bottom: 0 ;">Reservas</h6>
+                      <a style="color:white; cursor: pointer;" target="_modal:Open" data-bs-toggle="modal" data-bs-target="#ModalFormTabela" data-bs-dismiss="modal">Show All</a>
+                    </div>
+                    <!-- Reserva 1 -->
+                    <div style="display: flex;align-items: center;border-bottom: 0;padding-top: 1rem;">
+                      <div style="width: 100%;margin-left: 1rem;">
+                        <div style="display: flex;justify-content: space-between;">
+                          <h6 class="usernameMeuP" style="color:#FFFFFF;font-weight: bold;font-size: 14px;margin-bottom: 0 ;">username</h6>
+                          <small id="primeriaData">03/04/2023</small>
+                        </div>
+                        <span style="font-size: 14px;font-family:Raleway;font-weight: bold;color:#88988d" id="planos1">Plano: Premium || Pista: Fuji speedway || Estado: Aprovado</span>
+                      </div>
+                    </div>
+                    <hr>
+                    <div style="display: flex;align-items: center;border-bottom: 0;padding-top: 1rem;">
+                      <div style="width: 100%;margin-left: 1rem;">
+                        <div style="display: flex;justify-content: space-between;">
+                          <h6 class="usernameMeuP" style="color:#FFFFFF;font-weight: bold;font-size: 14px;margin-bottom: 0 ;">username</h6>
+                          <small id="segundaData">03/03/2023</small>
+                        </div>
+                        <span style="font-size: 14px;font-family:Raleway;font-weight: bold;color:#88988d" id="planos2">Plano: Standard || Pista: Fuji speedway || Estado: Rejeitado</span>
+                      </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<!-- Tabela reservas -Show all-->
+<div class="modal fade" id="ModalFormTabela" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content" id="loginPOPModalTabela" style="background-color: inherit; border-color: #a09d9d00;width: fit-content">
+    <div class="v8_3" style="width: 815px;height: 406px;margin-left:-62px;position: relative;"></div> <!--Plano vermlho do background-->
+    <div class="modal-body" id="loginPOPModal">
+        <div class="myform bg-dark" style="border-radius: 30px;margin-left: -68px;position: relative;height: 381px;bottom: 398px;width: 800px;max-width: none;">
+            <!--<h1 class="text-center">Login Form</h1>-->     
+            <div class="container " style="width:711px;position:relative;">
+                
+                <table class="table table-dark" id="our-table">
+                    <thead>
+                        <tr>
+                            <th>Data de Reserva</th>
+                            <th>Pista</th>
+                            <th>Plano</th>
+                            <th>Estado</th>
+                            <th>Cancelar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+            
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="container ">
+                <div id="pagination-wrapper"></div>
+            </div>          
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+      <div class="container" style="justify-content: center;">
+        <div class="section-header">
+          <h2>Informação da pista</h2>
+          <p>Conheça todos os pormenores da pista.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8" >
+            <img style="border-radius: 30px;width: 350px;height: auto;margin-bottom: 15px;" src="assets/img/inf-pistas/goodwood/foto1.jpg" alt="Speaker 1" class="img-fluid">
+            <img style="border-radius: 30px;width: 350px;height: auto;margin-bottom: 10px;" src="assets/img/inf-pistas/goodwood/pista.png" alt="Speaker 1" class="img-fluid">
+            <img style="border-radius: 30px;width: 350px;height: auto;margin-bottom: 10px;margin-right: 10px;" src="assets/img/inf-pistas/goodwood/foto2.jpg" alt="Speaker 1" class="img-fluid">
+            <img style="border-radius: 30px;width: 350px;height: auto;margin-bottom: 10px;" src="assets/img/inf-pistas/goodwood/foto3.jpg" alt="Speaker 1" class="img-fluid">
+          </div>
+
+          <div class="col-md-4">
+            <div class="details">
+              <h2>Goodwood</h2>
+             <!--<div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+              <p><span class="underlineInf">Distância:</span> 3,809m  <span class="underlineInf">Variação de elevação:</span> 10m  <span class="underlineInf">Curvas:</span> 7  <span class="underlineInf">mais longa:</span>  514m.</p>
+
+              <p>Goodwood Motor Circuit é uma pista de corrida histórica que já recebeu muitos pilotos ilustres. O percurso engloba o Aeroporto de Chichester/Goodwood e, ao contrário de muitos circuitos modernos, é cercado por um cenário idílico. O percurso é notável como um percurso de alta velocidade, com várias curvas de média e alta velocidade. Com sua alta porcentagem de aceleração total e uma boa combinação de mudanças de elevação, este curso certamente verá algumas corridas verdadeiramente emocionantes.</p>
+
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img style="width: 200px;height: 100px;object-fit:cover;" src="assets/img/logo.png" alt="TheEvenet">
+            <p>A Activities4ALL tem o prazer de ajudar e fornecer os melhores serviços ao público. Com um site iterativo e fácil de usar para ajudar todos os seus utilizadores a ter uma experiência inesquecível. Contamos com o feedback de todos os clientes para nos ajudar a aprimorar as nossas soluções e estratégias para chegar a todo o tipo de público!</p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links" style="margin-left: 120px;">
+            <h4>Lins Úteis</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index_USER.html#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index_USER.html#about">Sobre nós</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index_USER.html#buy-tickets">Serviços</a></li>
+            </ul>
+          </div>
+
+          <!--<div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>-->
+
+          <div class="col-lg-3 col-md-6 footer-contact" style="margin-left: 120px;">
+            <h4>Contacto</h4>
+            <p>
+              4800 076, R. da Pegada <br>
+              226, Guimarães<br>
+              Braga, Portugal <br>
+              <strong>Telemóvel:</strong> +351 987654321<br>
+              <strong>Email:</strong> activities4all@email.com<br>
+            </p>
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Activities4ALL</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+       
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Para quando abrir o form reserva-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!--Paginação-->
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+</body>
+
+</html>
